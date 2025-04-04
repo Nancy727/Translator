@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌍 **Universal Translator Bot** 🤖
 
-## Getting Started
+## 🚀 About the Project
+The **Universal Translator Bot** is an AI-powered, user-interactive application that breaks language barriers by translating **text, images, and voice** in real-time. Whether you're a traveler, student, or professional, this bot ensures seamless communication across multiple languages.
 
-First, run the development server:
+## ✨ Features
+- 🔤 **Text Translation** – Instantly convert text from one language to another.
+- 🖼️ **Image Translation** – Extract and translate text from uploaded images.
+- 🎙️ **Voice Translation** – Speak and get real-time voice translations.
+- 🌐 **Multi-Language Support** – Translate between numerous global languages.
+- 📱 **User-Friendly Interface** – Smooth, interactive, and easy to navigate.
+- 🤖 **AI-Powered Accuracy** – Smart learning improves translations over time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technologies Used
+- **Frontend:** React js
+- **Backend:** Python (Flask/Django)
+- **Machine Learning:**Gemini api
+- **Speech Processing:** Google Speech Recognition, Web Speech API
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Installation & Usage
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Nancy727/Universal-Translator-Bot.git
+   cd Universal-Translator-Bot
+   ```
+2. **Create a virtual environment (optional but recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Run the application:**
+   ```bash
+   python app.py
+   ```
+5. **Open in Browser:**
+   ```
+http://localhost:5000
+```  
+   Access the application via your local browser.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📞 Contact
+📧 Email: nancykumari742004@gmail.com 
+🔗 GitHub: [Nancy727](https://github.com/Nancy727)  
+🔗 LinkedIn:https://www.linkedin.com/in/nancy-kumari-014313297/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+🚀 **Break language barriers with the Universal Translator Bot!** 🌍
