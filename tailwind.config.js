@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -6,30 +7,57 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+      },
       animation: {
-        blob: "blob 7s infinite",
-        'fade-in': 'fade-in 0.5s ease-out',
+        'blob': 'blob 7s infinite',
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'tilt': 'tilt 10s infinite linear',
+        'slide-up': 'slide-up 0.3s ease-out'
       },
       keyframes: {
         blob: {
-          "0%": {
-            transform: "translate(0px, 0px) scale(1)",
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
           },
-          "33%": {
-            transform: "translate(30px, -50px) scale(1.1)",
+          '33%': {
+            transform: 'translate(30px, -50px) scale(1.1)',
           },
-          "66%": {
-            transform: "translate(-20px, 20px) scale(0.9)",
+          '66%': {
+            transform: 'translate(-20px, 20px) scale(0.9)',
           },
-          "100%": {
-            transform: "translate(0px, 0px) scale(1)",
+          '100%': {
+            transform: 'translate(0px, 0px) scale(1)',
           },
         },
-        'fade-in': {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
+        'tilt': {
+          '0%, 50%, 100%': {
+            transform: 'rotate(0deg)',
+          },
+          '25%': {
+            transform: 'rotate(2deg)',
+          },
+          '75%': {
+            transform: 'rotate(-2deg)',
+          },
+        },
+        'slide-up': {
+          '0%': { 
+            opacity: '0', 
+            transform: 'translateY(1rem)' 
+          },
+          '100%': { 
+            opacity: '1', 
+            transform: 'translateY(0)' 
+          },
+        }
       },
       backdropBlur: {
         'xl': '24px',
@@ -71,6 +99,8 @@ module.exports = {
     'bg-gray-800/50',
     'bg-gray-800/70',
     'bg-gray-900/60',
+    'animate-tilt',
+    'animate-slide-up',
   ],
   plugins: [],
-} 
+}
